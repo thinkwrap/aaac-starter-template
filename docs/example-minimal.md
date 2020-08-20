@@ -1,0 +1,1 @@
+{% include 'examples/minimal/README.md' %}

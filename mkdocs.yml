@@ -1,0 +1,60 @@
+site_name: Reference Architecture for $PRODUCTNAME
+repo_url: https://bitbucket.org/pivotree/$PRODUCTNAME-ref-arch/src/master/
+repo_name: $PRODUCTNAME-ref-arch
+site_description: $PRODUCTNAME Reference Architecture - Infrastructure Documentation
+site_author: miro.adamy@pivotree.com
+copyright: (c) 2020 Pivotree - https://pivotree.com/
+
+nav:
+    - Home: index.md
+    - Environments:
+        - Staging: STAG.md
+        - Production: PROD.md
+        - Dev/QA: DEV.md
+    - Modules:
+        - Module 1: module-demo-1.md
+        - Module 2: module-demo-2.md
+    - Examples:
+        - Minimal: example-minimal.md
+        - Typical: example-typical.md
+        - Everything: example-everything.md
+    - About this Documentation:
+        - Intro to MkDocs: mkdocs/about.md
+        - Markdown Demo: mkdocs/markdown-demo.md
+        - Macros Demo: mkdocs/macros-demo1.md
+#        - Diagrams: plantuml/diagrams.md
+theme:
+    name: material
+
+markdown_extensions:
+    - admonition
+    - codehilite
+    - footnotes
+    - meta
+    - toc:
+        permalink: True
+    - sane_lists
+    - pymdownx.arithmatex
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tabbed
+    - pymdownx.tilde
+    - pymdownx.magiclink
+    - pymdownx.details
+
+
+plugins:
+    - search
+    - macros:
+        include_dir: .
+
+extra:
+    price: 12.50
+    company:
+        name: Pivotree
+        address: March 450
+        website: https://pivotree.com/
